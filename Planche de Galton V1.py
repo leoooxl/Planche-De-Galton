@@ -1,3 +1,8 @@
+""" 
+Date : 27/02/25
+Author : PAUL-CAMUS Akira ; LHERMITTE Léo 
+"""
+
 import random
 import matplotlib.pyplot as plt
 from PIL import Image, ImageTk
@@ -123,7 +128,6 @@ class MyWindow(Tk):
         self.geometry('900x600')
         self.title('Simulation planche de Galton')
 
-
     def afficher_graphe(self,distribution,n,nb_bille):
         '''Méthode permettant l'affichage de la répartition des
          billes et de la courbe de Gauss'''
@@ -189,7 +193,6 @@ class MyWindow(Tk):
         except ValueError:
                     # Gestion des erreurs avec une boîte de message
                     messagebox.showerror('Erreur', 'Veuillez entrer un nombre entier valide dans chaque champ avant de valider.')
-
 
 # On crée notre fenêtre et on l'affiche
 if __name__ == '__main__' :
